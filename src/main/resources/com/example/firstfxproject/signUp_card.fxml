@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstfxproject.controllers.CardSignUpController">
+    <children>
+        <AnchorPane layoutX="93.0" layoutY="53.0" prefHeight="294.0" prefWidth="414.0">
+            <children>
+                <Label alignment="CENTER" layoutX="25.0" layoutY="8.0" prefHeight="27.0" prefWidth="384.0" text="Card number and Money" textFill="ORANGE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Separator layoutY="41.0" prefHeight="2.0" prefWidth="414.0" />
+                <ImageView fitHeight="57.0" fitWidth="95.0" layoutX="25.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@card_numb.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="135.0" layoutY="50.0" text="Enter an 16-digit card number: " />
+                <TextField fx:id="tf_cardNumber" layoutX="132.0" layoutY="67.0" prefHeight="35.0" prefWidth="171.0" promptText="card number" style="-fx-cursor: hand;" />
+                <Button fx:id="button_CardSave" layoutX="167.0" layoutY="239.0" mnemonicParsing="false" onAction="#cardSignUp" prefHeight="35.0" prefWidth="81.0" style="-fx-background-color: FFA500; -fx-cursor: hand;" text="Save" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                    </font>
+                </Button>
+                <Separator layoutX="406.0" layoutY="1.0" orientation="VERTICAL" prefHeight="285.0" prefWidth="6.0" style="-fx-background-color: orange;" />
+                <Label layoutX="46.0" layoutY="190.0" text="money :">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="tf_moneyOnCard" layoutX="132.0" layoutY="182.0" prefHeight="35.0" prefWidth="171.0" promptText="money on your card" style="-fx-cursor: hand;" />
+                <Separator layoutX="4.0" layoutY="284.0" prefHeight="3.0" prefWidth="406.0" style="-fx-background-color: orange;" />
+            <TextField fx:id="tf_PersNumb" layoutX="133.0" layoutY="124.0" prefHeight="35.0" prefWidth="171.0" promptText="Insert same Id" style="-fx-cursor: hand;" />
+            <Label layoutX="15.0" layoutY="132.0" text="Presonal number :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <Separator layoutX="94.0" layoutY="52.0" prefHeight="3.0" prefWidth="406.0" rotate="180.0" style="-fx-background-color: orange;" />
+        <Separator layoutX="90.0" layoutY="52.0" orientation="VERTICAL" prefHeight="285.0" prefWidth="6.0" rotate="180.0" style="-fx-background-color: orange;" />
+    </children>
+</AnchorPane>
